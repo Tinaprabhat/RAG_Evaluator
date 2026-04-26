@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ragwatch"
+version = "0.3.0"
+description = "Pytest-native, framework-agnostic, CPU-friendly RAG evaluation. No LLM-as-judge. Self-trust meta-evaluation included."
+readme = "PROJECT_LOG.md"
+requires-python = ">=3.9"
+authors = [{ name = "Tina" }]
+license = { text = "MIT" }
+keywords = ["rag", "evaluation", "nli", "hallucination", "retrieval-augmented-generation", "onnx", "meta-evaluation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24,<3.0",
+    "scipy>=1.10",
+    "sentence-transformers>=2.5",
+    "torch>=2.1",
+    "transformers>=4.36",
+    "spacy>=3.7",
+    "onnx>=1.15",
+    "onnxruntime>=1.16",
+    "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+ollama = ["ollama>=0.3"]
+dev = ["pytest>=7.4", "pytest-cov>=4.1"]
+
+[project.scripts]
+ragwatch = "ragwatch.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ragwatch*"]
+exclude = ["tests*", "examples*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"

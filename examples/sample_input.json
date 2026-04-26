@@ -1,0 +1,31 @@
+[
+  {
+    "query": "Who developed the theory of general relativity, and in what year?",
+    "context": [
+      "Albert Einstein developed the theory of general relativity in 1915.",
+      "The theory describes gravity as a curvature of spacetime.",
+      "Einstein won the Nobel Prize in Physics in 1921 for the photoelectric effect."
+    ],
+    "answer": "The theory of general relativity was developed by Albert Einstein in 1915.",
+    "ground_truth": "Albert Einstein developed general relativity in 1915."
+  },
+  {
+    "query": "What is the capital of France and what river runs through it?",
+    "context": [
+      "Paris is the capital of France.",
+      "The Seine river flows through Paris.",
+      "France is in Western Europe."
+    ],
+    "answer": "Paris is the capital of France, and the Seine river flows through it.",
+    "ground_truth": "Paris; the Seine."
+  },
+  {
+    "query": "How many planets are in our solar system?",
+    "context": [
+      "Our solar system contains eight planets.",
+      "Pluto was reclassified as a dwarf planet in 2006."
+    ],
+    "answer": "There are nine planets in our solar system, including Pluto.",
+    "ground_truth": "Eight planets."
+  }
+]

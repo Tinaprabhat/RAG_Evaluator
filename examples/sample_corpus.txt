@@ -1,0 +1,11 @@
+Albert Einstein developed the theory of general relativity in 1915. The theory describes gravity as the curvature of spacetime caused by mass and energy. Einstein later received the Nobel Prize in Physics in 1921 for his work on the photoelectric effect. His contributions reshaped modern physics in profound ways.
+
+Paris is the capital city of France and is one of the most visited cities in the world. The Seine river flows through the heart of Paris, dividing it into the Left Bank and the Right Bank. The Eiffel Tower, completed in 1889, stands as one of the most recognizable landmarks of the city. Paris is also known for its rich culinary tradition.
+
+The solar system consists of the Sun and eight planets that orbit around it. Pluto was once considered the ninth planet but was reclassified as a dwarf planet in 2006 by the International Astronomical Union. The four inner planets are rocky, while the outer four are gas or ice giants. Our solar system formed approximately 4.6 billion years ago.
+
+Photosynthesis is the process by which green plants convert sunlight into chemical energy. The process takes place primarily in the chloroplasts of plant cells. Carbon dioxide and water are converted into glucose and oxygen during photosynthesis. This process is essential for life on Earth.
+
+The human heart is a muscular organ that pumps blood throughout the body. It has four chambers: two atria and two ventricles. The heart beats approximately 100,000 times per day in a healthy adult. Cardiovascular disease remains a leading cause of death globally.
+
+Machine learning is a subfield of artificial intelligence focused on building systems that learn from data. Common approaches include supervised learning, unsupervised learning, and reinforcement learning. Neural networks are a popular machine learning technique inspired by the structure of the human brain. Deep learning has driven major advances in computer vision and natural language processing.

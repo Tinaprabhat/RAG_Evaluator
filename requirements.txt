@@ -1,0 +1,44 @@
+# ============================================================
+# RAGWatch v0.2.0 — runtime requirements
+# Designed to run on Lenovo ThinkBook (CPU-only, no GPU).
+# Total RAM footprint with all engines + ONNX: ~470 MB.
+# ============================================================
+
+# ---- Core numerics (always required) ----
+numpy>=1.24,<3.0
+scipy>=1.10
+
+# ---- Embeddings (required) ----
+# all-MiniLM-L6-v2 backbone — ~80 MB, CPU friendly
+sentence-transformers>=2.5
+torch>=2.1
+transformers>=4.36
+
+# ---- NLI engine (required for faithfulness/completeness) ----
+# Uses cross-encoder/nli-deberta-v3-small (~180 MB, ~50 MB ONNX-quantized).
+# CrossEncoder ships with sentence-transformers — listed for clarity.
+
+# ---- Sentence splitting (optional but recommended) ----
+# spaCy + small English model. If absent, RAGWatch falls back to regex.
+spacy>=3.7
+# small English model is fetched separately via:
+#   python -m spacy download en_core_web_sm
+
+# ---- Option B: ONNX export + INT8 quantization ----
+# Required for `python -m ragwatch.cli.main quantize` and faster CPU inference.
+# After quantization the NLI footprint drops from ~180 MB to ~50 MB.
+onnx>=1.15
+onnxruntime>=1.16
+
+# ---- Setup check ----
+# psutil is used by setup_check.py for RAM reporting.
+psutil>=5.9
+
+# ---- OPTIONAL: Logit-uncertainty engine ----
+# Only needed if you set use_logit_uncertainty=True.
+# Requires the ollama daemon installed separately (https://ollama.com).
+ollama>=0.3 ; python_version >= "3.9"
+
+# ---- Testing ----
+pytest>=7.4
+pytest-cov>=4.1
